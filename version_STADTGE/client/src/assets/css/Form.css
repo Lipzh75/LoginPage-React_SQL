@@ -1,0 +1,57 @@
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px; /* Adequate padding */
+  background-color: #1e1e1e; /* Dark background for form */
+  border-radius: 8px;
+  border: 3px solid #093f99; /* Thicker orange border */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Stronger shadow */
+}
+
+h2 {
+  text-align: center;
+  color: #f2f2f2; /* Orange color for header */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between input fields */
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%; /* Full width of the container */
+  max-width: 300px; /* Set a maximum width */
+  padding: 10px; /* Padding for better usability */
+  margin: 0 auto; /* Center the input */
+  display: block; /* Block display for centering */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #2c2c2c; /* Dark input background */
+  color: #f2f2f2; /* Light input text */
+}
+
+button {
+  background-color: #093f99; /* Orange button color */
+  color: #f2f2f2; /* Dark text color */
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px; /* Matching padding */
+  width: 100%; /* Full width */
+  max-width: 300px; /* Match the input max-width */
+  height: 48px; /* Set height to match input fields */
+  border-radius: 4px; /* Match border-radius with inputs */
+  margin: 0 auto; /* Center the button */
+  display: block; /* Block display for centering */
+}
+
+button:hover {
+  background-color: #093f99; /* Darker orange on hover */
+}
+
+.error {
+  color: #093f99; /* Orange color for error message */
+  margin-bottom: 20px;
+  text-align: center;
+}

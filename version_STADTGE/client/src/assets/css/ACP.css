@@ -1,0 +1,159 @@
+.acp-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.acp-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+  
+.user-list-container, .create-user-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+  
+.user-list-container h2, .create-user-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+  
+.user-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+  
+.user-list-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+  
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+.user-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+  
+.user-actions select, .user-actions button {
+    margin-top: 5px;
+}
+  
+.create-user-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.form-group label {
+    min-width: 120px;
+    margin: 0;
+    text-align: left;
+    color: black;
+}
+  
+.form-group input, .form-group select, .form-group button {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    box-sizing: border-box; /* Sicherstellen, dass Padding und Border in die Breite einbezogen werden */
+}
+  
+.create-user-form .form-group input,
+.create-user-form .form-group select,
+.create-user-form .form-group button {
+    width: 100%; /* Maximale Breite beibehalten */
+    margin-left: 10px;
+}
+  
+.create-user-form .submit-button {
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    text-align: center;
+}
+  
+.create-user-form .submit-button:hover {
+    background-color: #025ec0;
+}
+  
+.create-user-form .form-group.full-width {
+    flex-direction: column;
+    align-items: flex-start;
+}
+  
+.create-user-form .form-group.full-width button {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%; /* Maximale Breite beibehalten */
+}
+
+.password-controls {
+    display: flex;
+    flex-direction: column; /* Stellt sicher, dass Buttons untereinander angezeigt werden */
+    gap: 10px; /* Abstand zwischen den Buttons */
+    align-items: flex-start; /* Links ausrichten */
+    margin-top: 10px;
+    padding-left: 10px; /* Fügt den gleichen linken Abstand wie bei den anderen Form-Elementen hinzu */
+}
+  
+.error {
+    color: red;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    text-align: center;
+}
+
+.user-list {
+    scrollbar-width: thin;
+    scrollbar-color: #0056b3 #f1f1f1;
+}
+
+.user-list::-webkit-scrollbar {
+    width: 12px;
+}
+
+.user-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.user-list::-webkit-scrollbar-thumb {
+    background-color: #0056b3;
+    border-radius: 20px;
+    border: 3px solid #f1f1f1;
+}
